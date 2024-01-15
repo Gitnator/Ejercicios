@@ -46,7 +46,7 @@ console.log(avengers[0])
 avengers.shift()
 console.log(avengers)
 avengers.push("IRONMAN")
-console.log(avengers)
+console.log(avengers) /
 //1.3
 console.log(avengers.length)
 //1.4 
