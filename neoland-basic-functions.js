@@ -119,3 +119,35 @@ function nameFinder1(array, name) {
     return {existe: false, index: indice}
     }
 }
+
+
+//*Iteración 8
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+]
+
+
+function counterwords1(array) {
+    let objetitocontador = {}
+    array.forEach(elemento => {
+    if(!objetitocontador[elemento]) {
+        objetitocontador[elemento] = 1;
+    }else{
+        array[objetitocontador]++;
+
+    }
+    })
+    return objetitocontador;
+}
+
+ console.log(counterWords1(counterWords))
